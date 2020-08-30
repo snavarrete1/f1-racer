@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+<script src="js/main.js"></script>
+<title>F1 Racer Data Example</title>
+
+</head>
+<body>
+<!-- Navbar directly from bootstrap -->
+<nav>
+    <ul class="nav">
+        <li class="nav-item">
+        <a class="nav-link active" href="#">Weather</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Racer</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sample</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <!-- F1 Racer Form -->
+    <form>
+        <div class="form-row">
+          <div class="col">
+              <label for="season">Season</label>
+            
+            <input type="text" class="form-control" placeholder="Season" id="season">
+          </div>
+          <div class="col">
+            <label for="season">Round</label>
+            <input type="text" class="form-control" placeholder="Round" id="round">
+          </div>
+          <button type="button" class="btn btn-primary" onClick="getData()">Get Standings</button>
+        </div>
+      </form>
+
+    <!-- F1 Racer Table Data -->
+    <table class="table table-transparent">
+        <thead>
+          <tr>
+            <th scope="col">Position</th>
+            <th scope="col">Name</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Sponsor</th>
+            <th scope="col">Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td id="position-0">Sebastian Vettel</td>
+            <td id="nationality-0">German</td>
+            <td id="sponsor-0">Ferrari</td>
+            <td id="points-0">54</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td id="position-1">Lewis Hamilton</td>
+            <td id="nationality-1">British</td>
+            <td id="sponsor-1">Mercedes</td>
+            <td id="points-1">45</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td id="position-2">Valterri Bottas</td>
+            <td id="nationality-2">Finnish</td>
+            <td id="sponsor-2">Mercedes</td>
+            <td id="points-2">40</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td id="position-3">Daniel Ricciardo</td>
+            <td id="nationality-3">Australian</td>
+            <td id="sponsor-3">Red Bull</td>
+            <td id="points-3">37</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td id="position-4">Kimi Räikkönen</td>
+            <td id="nationality-4">Finnish</td>
+            <td id="sponsor-4">Ferrari</td>
+            <td id="points-4">30</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td id="position-5">Fernando Alonso</td>
+            <td id="nationality-5">Spanish</td>
+            <td id="sponsor-5">McLaren</td>
+            <td id="points-5">22</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td id="position-6">Nico Hülkenberg</td>
+            <td id="nationality-6">German</td>
+            <td id="sponsor-6">Renault</td>
+            <td id="points-6">22</td>
+          </tr>
+        </tbody>
+      </table>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

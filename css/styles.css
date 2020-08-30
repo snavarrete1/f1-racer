@@ -1,0 +1,19 @@
+body { 
+    background-image: url('../css/images/wessel-hampsink-YK_COdY5iIM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 180vh;
+}
+
+.table {
+    color: white;
+    
+}
+
+form {
+    color: white;
+
+}
+
+
